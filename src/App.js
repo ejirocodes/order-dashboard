@@ -6,14 +6,10 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  Th,
-  Tfoot,
   Tr,
   Tbody,
   Td,
   Table,
-  TableCaption,
-  Thead,
 } from '@chakra-ui/react';
 import logo from './assets/logo.png';
 import chevronDown from './assets/down-chevron.svg';
