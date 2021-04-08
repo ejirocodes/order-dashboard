@@ -277,6 +277,14 @@ function App() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
+          <Table variant="simple" style={{ marginTop: '5rem' }}>
+            <Tbody>
+              <Tr className="table-right">
+                <Td className="total">Total amount</Td>
+                <Td className="heading-main">$3897</Td>
+              </Tr>
+            </Tbody>
+          </Table>
         </div>
       </section>
     </div>

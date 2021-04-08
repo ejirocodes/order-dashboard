@@ -245,10 +245,17 @@ body {
 .chakra-accordion__button {
   padding: 1.8rem !important;
 }
+.chakra-accordion__button:hover {
+  border-radius: 1rem;
+}
 .chakra-accordion__panel {
   padding: 2rem 0 0 !important;
 }
 .chakra-accordion__icon {
   width: 2rem !important;
   height: 2rem !important;
+}
+.total {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
