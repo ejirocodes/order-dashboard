@@ -90,7 +90,7 @@ body {
 .main-top {
   align-items: center;
   justify-content: space-between;
-  margin: 5rem 0 1rem;
+  margin: 5rem 0 2rem;
 }
 .padlock {
   margin-right: 1rem;
@@ -262,5 +262,44 @@ body {
 @media screen and (min-width: 1973px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard-left {
+    width: 100%;
+  }
+  .dashboard-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 624px) {
+  .credit-card__main {
+    flex-direction: column;
+  }
+  .credit-card__right {
+    width: 100%;
+  }
+  .credit-card__left {
+    margin-bottom: 2rem;
+  }
+  .button-container {
+    text-align: center;
+  }
+  .btn-fill {
+    margin-bottom: 2rem;
+  }
+  .dashboard-right,
+  .dashboard-left {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
   }
 }
