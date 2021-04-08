@@ -6,6 +6,14 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Th,
+  Tfoot,
+  Tr,
+  Tbody,
+  Td,
+  Table,
+  TableCaption,
+  Thead,
 } from '@chakra-ui/react';
 import logo from './assets/logo.png';
 import chevronDown from './assets/down-chevron.svg';
@@ -172,36 +180,100 @@ function App() {
           </div>
           <Accordion defaultIndex={[0]} allowToggle={true}>
             <AccordionItem>
-              <h2>
+              <h2 className="accordion-title">
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
-                    Section 1 title
+                    Prada
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                <Table variant="simple">
+                  <Tbody>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Leather mini-bag</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Estimated shipping</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Discount</Td>
+                      <Td>$0.00</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Total</Td>
+                      <Td>$2323</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </AccordionPanel>
             </AccordionItem>
 
             <AccordionItem>
-              <h2>
+              <h2 className="accordion-title">
                 <AccordionButton>
                   <Box flex="1" textAlign="left">
-                    Section 2 title
+                    Dr.Martens
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                <Table variant="simple">
+                  <Tbody>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Leather mini-bag</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Estimated shipping</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Discount</Td>
+                      <Td>$0.00</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Total</Td>
+                      <Td>$2323</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <h2 className="accordion-title">
+                <AccordionButton>
+                  <Box flex="1" textAlign="left">
+                    Chanel
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Table variant="simple">
+                  <Tbody>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Leather mini-bag</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Estimated shipping</Td>
+                      <Td>$1850</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Discount</Td>
+                      <Td>$0.00</Td>
+                    </Tr>
+                    <Tr className="table-right">
+                      <Td className="font-grey">Total</Td>
+                      <Td>$2323</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
