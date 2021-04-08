@@ -5,8 +5,11 @@ import padlock from './assets/padlock.svg';
 import card1 from './assets/card1.png';
 import card2 from './assets/card2.png';
 import card3 from './assets/card3.png';
+import mastercard from './assets/mastercard.png';
 
 function App() {
+  const creditCardValue = '1234 5678 9101 1121';
+  const nameValue = 'Annette Murphy';
   return (
     <div className="App">
       <section className="dashboard bg-grey">
@@ -42,10 +45,41 @@ function App() {
                 <p>PayPal</p>
                 <p>Other</p>
               </div>
-              <div className="credit-card__left flex col">
-                <img src={card1} alt="card" className="credit-card" />
-                <img src={card2} alt="card" className="credit-card" />
-                <img src={card3} alt="card" className="credit-card" />
+              <div className="credit-card__main flex btw">
+                <div className="credit-card__left flex col">
+                  <img src={card1} alt="card" className="credit-card" />
+                  <img src={card2} alt="card" className="credit-card" />
+                  <img src={card3} alt="card" className="credit-card" />
+                </div>
+                <div className="credit-card__right">
+                  <form>
+                    <div className="form-control">
+                      <label htmlFor="creditCard">Credit card</label>
+                      <div className="mastercard-wrapper">
+                        <input
+                          type="text"
+                          id="creditCard"
+                          className="bg-grey"
+                          value={creditCardValue}
+                        />
+                        <img
+                          src={mastercard}
+                          alt="mastercard"
+                          className="mastercard"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-control">
+                      <label htmlFor="name">Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        className="bg-grey"
+                        value={nameValue}
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </section>

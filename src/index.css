@@ -32,6 +32,9 @@ body {
 .col {
   flex-direction: column;
 }
+.btw {
+  justify-content: space-between;
+}
 .bg-grey {
   background-color: #f5f8f9;
 }
@@ -108,7 +111,35 @@ body {
   border-bottom: 2.8px solid;
   padding-bottom: 2rem;
 }
+.credit-card__right {
+  width: 50%;
+}
 .credit-card {
   width: 30rem;
   margin-bottom: 1.8rem;
+}
+.form-control label {
+  display: block;
+  color: #a3a3a3;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.form-control input {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  font-size: 1.8rem;
+  border: 0;
+  border-radius: 1rem;
+  outline: none;
+  margin-bottom: 4rem;
+}
+.mastercard-wrapper {
+  position: relative;
+}
+.mastercard-wrapper .mastercard {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 4rem;
+  margin-right: 1.3rem;
 }
