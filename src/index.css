@@ -136,10 +136,49 @@ body {
 .mastercard-wrapper {
   position: relative;
 }
-.mastercard-wrapper .mastercard {
+.mastercard-wrapper .mastercard,
+.cvv-wrapper .visibility {
   position: absolute;
   right: 0;
-  top: 25%;
+  top: 20%;
+  margin-right: 2rem;
+}
+.mastercard-wrapper .mastercard {
   width: 4rem;
-  margin-right: 1.3rem;
+}
+.form-bottom .form-control:first-of-type {
+  margin-right: 4rem;
+}
+
+#expirationDate,
+#cvv {
+  width: 12rem;
+}
+.expiration-date {
+  text-align: center;
+}
+.cvv-wrapper {
+  position: relative;
+}
+.cvv-wrapper .visibility {
+  width: 2rem;
+}
+.btn-fill {
+  background-color: #000;
+  color: #fff;
+  padding: 1.8rem 3.4rem;
+  font: inherit;
+  font-size: 1.5rem;
+  border: 0;
+  outline: none;
+  border-radius: 1rem;
+}
+.btn-flat {
+  background: transparent;
+  color: #a3a3a3;
+  padding: 1.8rem 3.4rem;
+  font: inherit;
+  font-size: 1.5rem;
+  border: 0;
+  outline: none;
 }
