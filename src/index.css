@@ -259,3 +259,8 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media screen and (min-width: 1973px) {
+  html {
+    font-size: 100%;
+  }
+}
