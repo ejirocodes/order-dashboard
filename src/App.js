@@ -1,4 +1,12 @@
 import './App.css';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from '@chakra-ui/react';
 import logo from './assets/logo.png';
 import chevronDown from './assets/down-chevron.svg';
 import padlock from './assets/padlock.svg';
@@ -7,6 +15,9 @@ import card2 from './assets/card2.png';
 import card3 from './assets/card3.png';
 import mastercard from './assets/mastercard.png';
 import visibility from './assets/visibility.svg';
+import cargoBox from './assets/cargo-box.svg';
+import payment from './assets/credit-card.svg';
+import review from './assets/sync.svg';
 
 function App() {
   const creditCardValue = '1234 5678 9101 1121';
@@ -19,8 +30,8 @@ function App() {
   };
   return (
     <div className="App">
-      <section className="dashboard bg-grey">
-        <div className="dashboard-right">
+      <section className="dashboard bg-grey flex">
+        <div className="dashboard-left">
           <header className="dashboard-header flex">
             <img src={logo} className="App-logo" alt="logo" />
             <div className="user-info bg-grey flex	 ">
@@ -129,6 +140,71 @@ function App() {
               </div>
             </div>
           </section>
+        </div>
+        <div className="dashboard-right">
+          <h1 className="heading-main ">Order summary</h1>
+          <div className="order-steps flex btw">
+            <div className="step-one flex center">
+              <img src={cargoBox} alt="cargo box" className="step-icon cargo" />
+              <p className="font-grey">
+                Step 1 <br /> Free shipping
+              </p>
+            </div>
+            <div className="step-one flex center ">
+              <img
+                src={payment}
+                alt="cargo box"
+                className="step-icon payment"
+              />
+              <p className="font-grey">
+                Step 2 <br />{' '}
+                <span style={{ color: '#000', fontWeight: '700' }}>
+                  Payment
+                </span>
+              </p>
+            </div>
+            <div className="step-one flex center">
+              <img src={review} alt="cargo box" className="step-icon review" />
+              <p className="font-grey">
+                Step 3 <br /> Review
+              </p>
+            </div>
+          </div>
+          <Accordion defaultIndex={[0]} allowToggle={true}>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box flex="1" textAlign="left">
+                    Section 1 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box flex="1" textAlign="left">
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </div>
